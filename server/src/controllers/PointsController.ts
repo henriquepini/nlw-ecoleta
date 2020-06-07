@@ -6,17 +6,17 @@ class PointsController {
     const { city, uf, items } = req.query;
 
     const parsedItems = String(items)
-      .split(',')
-      .map(item => Number(item.trim()));
+    .split(',')
+    .map(item => Number(item.trim()));
 
-      const points = await knex('points')
-        .join('point_items', 'point_id', '=', 'point_items.point_id')
-        .whereIn('point_items.item_id', parsedItems)
-        .where('city', String(city))
-        .where('uf', String(uf))
-        .distinct()
-        .select('points.*')
-        .orderBy('id');
+    const points = await knex('points')
+    .join('point_items', 'points.id', '=', 'point_items.point_id')
+    .whereIn('point_items.item_id', parsedItems)
+    .where('city', String(city))
+    .where('uf', String(uf))
+    .distinct()
+    .select('points.*')
+    .orderBy('id');
 
     return res.json(points);
   }
@@ -28,7 +28,7 @@ class PointsController {
 
     if (!point) {
       return res.status(400).json({ message: 'Point not found' });
-    } 
+    }
 
     const items = await knex('items')
       .join('point_items', 'items.id', '=', 'point_items.item_id')
@@ -49,7 +49,7 @@ class PointsController {
       uf,
       items
     } = req.body;
-  
+
     const trx = await knex.transaction();
 
     const point = {
@@ -64,9 +64,9 @@ class PointsController {
     }
 
     const insertedIds = await trx('points').insert(point);
-  
+
     const point_id = insertedIds[0];
-  
+
     const pointItems = items.map((item_id: number) => {
       return {
         item_id,
@@ -77,14 +77,14 @@ class PointsController {
       await trx('point_items').insert(pointItems);
 
       await trx.commit();
-    } catch(error) {
+    } catch (error) {
       console.log(error)
       await trx.rollback();
 
       return res.status(400).json({ message: 'Falha na inserção no banco, verifique se os items informados são válidos.' });
     }
 
-    return res.json({id: point_id ,...point, });
+    return res.json({ id: point_id, ...point, });
   }
 
   async remove(req: Request, res: Response) {
@@ -94,10 +94,10 @@ class PointsController {
 
     try {
       await trx('point_items').where('point_id', id).del();
-    } catch(error) {
+    } catch (error) {
       await trx.rollback();
       console.log(error);
-      
+
       return res.status(400).json({ message: "Could not delete point_items." });
     }
 
@@ -105,10 +105,10 @@ class PointsController {
       await trx('points').where('id', id).del();
 
       await trx.commit();
-    } catch(error) {
+    } catch (error) {
       await trx.rollback();
       console.log(error);
-      
+
       return res.status(500).json({ message: "Could not delete point." });
     }
 
