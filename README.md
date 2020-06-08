@@ -2,6 +2,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/languages/count/henriquepini/nlw-ecoleta?color=blueviolet" />
+  <img src="https://img.shields.io/github/languages/count/henriquepini/nlw-ecoleta?color=blueviolet" />
+  <img src="https://img.shields.io/github/languages/count/henriquepini/nlw-ecoleta?color=blueviolet" />
+  <img src="https://img.shields.io/github/repo-size/henriquepini/nlw-ecoleta?color=blueviolet" />
+  <img src="https://img.shields.io/github/followers/henriquepini?label=Follow&style=social" />
 <p/>
 
 <img src="https://user-images.githubusercontent.com/11811935/84075755-0ebd2500-a9ab-11ea-93b9-a06b2a6863d5.png" />
@@ -26,56 +30,64 @@ $ cd nlw-ecoleta
 ```
 <h2> Instale as dependências de cada parte do app:</h2>
 
-<h3>:gear: Back-end</h3>
+From your command line:
 
-Instalando as dependências:
+### :gear: API 
 
-```
+```bash
+# Entre na pasta
 $ cd server
+
+# Instale as dependências
 $ npm install
-```
 
-Configurando o banco de dados:
-
-- Migration
-```
+# Rode os Migrates
 $ npm run knex:migrate
-```
-- Seed
-```
+
+# Rode os Seeds
 $ npm run knex:seed
-```
 
-Iniciando o servidor:
-
-```
+# Start server
 $ npm run dev:server
+
+# running by default on port 3333
+# if port colision, change on server.ts (/src/server.ts)
 ```
 
-<h3>:computer: Front-end</h3>
+### :computer: Front-end
 
-Instalando as dependências:
-
-```
+```bash
+# Entre na pasta
+$ cd ..
 $ cd web
+
+# Instale as dependências
 $ npm install
-```
-Iniciando a aplicação:
 
-```
+# Inicie
 $ npm start
+
+# running on port 3000
 ```
 
-<h3>:iphone: Mobile </h3>
+### :iphone: Mobile
 
-Instalando as dependências:
+:warning: É preciso ter o expo instalado em seu dispositivo, ou emulador :warning:
 
-```
-$ cd mobile
+```bash
+# Entre na pasta
+$ cd ..
+$ cd web
+
+# Instale as dependências
 $ npm install
-```
-Iniciando a aplicação:
 
-```
+# Inicie
 $ npm start
+
+# Expo vai abrir no navegador, só escanear o qrcore que aparece
+
+# Se der algum erro com fonte, rode:
+$ expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto --npm
+
 ```
