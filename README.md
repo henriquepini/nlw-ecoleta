@@ -2,10 +2,13 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/languages/count/henriquepini/nlw-ecoleta?color=blueviolet" />
-  <img src="https://img.shields.io/github/languages/count/henriquepini/nlw-ecoleta?color=blueviolet" />
-  <img src="https://img.shields.io/github/languages/count/henriquepini/nlw-ecoleta?color=blueviolet" />
+  <a href="https://www.linkedin.com/in/henriquepini/">
+    <img src="https://img.shields.io/badge/Made%20by-Henrique%20Pini-blueviolet" />
+  </a>
   <img src="https://img.shields.io/github/repo-size/henriquepini/nlw-ecoleta?color=blueviolet" />
+  <img src="https://img.shields.io/github/license/henriquepini/nlw-ecoleta?color=blueviolet" />
   <img src="https://img.shields.io/github/followers/henriquepini?label=Follow&style=social" />
+  <img src="https://img.shields.io/github/stars/henriquepini/nlw-ecoleta?style=social" />
 <p/>
 
 <img src="https://user-images.githubusercontent.com/11811935/84075755-0ebd2500-a9ab-11ea-93b9-a06b2a6863d5.png" />
@@ -21,7 +24,7 @@ Este é um projeto da Rocketseat, voltado ao meio ambiente. Através dele, é po
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.io)
 
-## :unlock: How-to
+## :unlock: Como usar
 #### Faça o clone do projeto:
 
 ```
@@ -30,7 +33,7 @@ $ cd nlw-ecoleta
 ```
 <h2> Instale as dependências de cada parte do app:</h2>
 
-From your command line:
+No seu prompt de comando:
 
 ### :gear: API 
 
@@ -47,12 +50,12 @@ $ npm run knex:migrate
 # Rode os Seeds
 $ npm run knex:seed
 
-# Start server
+# Inicie o servidor
 $ npm run dev:server
 
-# running by default on port 3333
-# if port colision, change on server.ts (/src/server.ts)
+# rodando na porta 3333
 ```
+#### Se tiver colisão, mude o arquivo [server.ts][server] para alterar a porta
 
 ### :computer: Front-end
 
@@ -67,12 +70,14 @@ $ npm install
 # Inicie
 $ npm start
 
-# running on port 3000
+# rodando na porta 3000
 ```
 
 ### :iphone: Mobile
 
-:warning: É preciso ter o expo instalado em seu dispositivo, ou emulador :warning:
+#### :warning: Avisos para o mobile :warning:
+ - É preciso ter o Expo instalado em seu dispositivo, ou emulador.
+ - Entre no arquivo [api.ts][api] e altere a baseURL
 
 ```bash
 # Entre na pasta
@@ -89,5 +94,16 @@ $ npm start
 
 # Se der algum erro com fonte, rode:
 $ expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto --npm
-
 ```
+## :pray: Agradecimentos
+Agreço à equipe da [Rocketseat][rocket] por todo o apoio durante o projeto, e por todos a comunidade envolvida nessa semana !
+
+## :memo: Licença
+
+Este projeto está sob a licença MIT. Veja [LICENSE](https://github.com/henrique/nlw-ecoleta/blob/master/LICENSE) para mais detalhes.
+
+Feito com :purple_heart: por Henrique Pini 👋 [Entre em contato !](https://www.linkedin.com/in/henriquepini/)
+
+[api]: https://github.com/henriquepini/nlw-ecoleta/blob/master/mobile/src/services/api.ts
+[server]: https://github.com/henriquepini/nlw-ecoleta/blob/master/server/src/server.ts
+[rocket]: https://rocketseat.com.br/
