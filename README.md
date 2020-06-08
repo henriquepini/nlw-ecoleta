@@ -1,6 +1,7 @@
 <h1 align="center">:rocket:Ecoleta - Next Level Week #1</h1>
 
 <p align="center">
+  <a href="https://www.codacy.com/manual/henriquepini/nlw-ecoleta?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=henriquepini/nlw-ecoleta&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/8fd04c465e0d4f4e9d4e6162638b36e5"/></a>
   <img src="https://img.shields.io/github/languages/count/henriquepini/nlw-ecoleta?color=blueviolet" />
   <a href="https://www.linkedin.com/in/henriquepini/">
     <img src="https://img.shields.io/badge/Made%20by-Henrique%20Pini-blueviolet" />
