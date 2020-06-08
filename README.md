@@ -11,11 +11,11 @@ Este é um projeto da Rocketseat, voltado ao meio ambiente. Através dele, é po
 
 ## :warning: Pré requisitos gerais
 
-- [Node.js][nodejs]
-- [TypeScript][typescript]
-- [React][reactjs]
-- [React Native][rn]
-- [Expo][expo] 
+- [Node.js](https://nodejs.org/pt-br/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.io)
 
 ## :unlock: How-to
 #### Faça o clone do projeto:
