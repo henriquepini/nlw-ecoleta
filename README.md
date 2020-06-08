@@ -1,4 +1,4 @@
-<h1 align="center">Ecoleta - Next Level Week #1</h1>
+<h1 align="center">:rocket:Ecoleta - Next Level Week #1</h1>
 
 <p align="center">
   <img src="https://img.shields.io/github/languages/count/henriquepini/nlw-ecoleta?color=blueviolet" />
