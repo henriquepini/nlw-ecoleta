@@ -1,7 +1,7 @@
 <h1 align="center">:rocket:Ecoleta - Next Level Week #1</h1>
 
 <p align="center">
-  <a href="https://www.codacy.com/manual/henriquepini/nlw-ecoleta?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=henriquepini/nlw-ecoleta&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/8fd04c465e0d4f4e9d4e6162638b36e5"/></a>
+  <a href="https://www.codacy.com/manual/henriquepini/nlw-ecoleta?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=henriquepini/nlw-ecoleta&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/cc9811b1cd1f4bc3a3cc3d8b37d24103"/></a>
   <img src="https://img.shields.io/github/languages/count/henriquepini/nlw-ecoleta?color=blueviolet" />
   <a href="https://www.linkedin.com/in/henriquepini/">
     <img src="https://img.shields.io/badge/Made%20by-Henrique%20Pini-blueviolet" />
@@ -14,7 +14,7 @@
 
 <img src="https://user-images.githubusercontent.com/11811935/84075755-0ebd2500-a9ab-11ea-93b9-a06b2a6863d5.png" />
 
-## :information_source: Sobre o projeto:
+## :information_source: Sobre o projeto
 
 Este é um projeto da Rocketseat, voltado ao meio ambiente. Através dele, é possível ver em sua região, onde existem pontos de coleta de resíduos cadastrados.
 
@@ -28,12 +28,12 @@ Este é um projeto da Rocketseat, voltado ao meio ambiente. Através dele, é po
 
 ## :unlock: Como usar
 
-#### Faça o clone do projeto:
+### Faça o clone do projeto
 
     $ git clone https://github.com/henriquepini/nlw-ecoleta.git
     $ cd nlw-ecoleta
 
-<h2> Instale as dependências de cada parte do app:</h2>
+### Instale as dependências de cada parte do app
 
 No seu prompt de comando:
 
