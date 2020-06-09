@@ -1,6 +1,6 @@
 #page-home {
   height: 100vh;
-  background: url('../../assets/home-background.svg') no-repeat 600px bottom;
+  background: url('../../assets/home-background.svg') no-repeat 700px bottom;
 }
 
 #page-home .content {
@@ -20,7 +20,7 @@
 
 #page-home .content main {
   flex: 1;
-  max-width: 560px;
+  max-width: 520px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +51,6 @@
 }
 
 #page-home .content main a span {
-  display: block;
   background: rgba(0, 0, 0, 0.08);
   width: 72px;
   height: 72px;
