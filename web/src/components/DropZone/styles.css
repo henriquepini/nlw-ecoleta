@@ -1,8 +1,7 @@
 .dropzone {
   height: 300px;
-  background: #E1FAEC;
+  background: #e1faec;
   border-radius: 10px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,8 +19,7 @@
   width: calc(100% - 60px);
   height: calc(100% - 60px);
   border-radius: 10px;
-  border: 1px dashed #4ECB79;
-
+  border: 1px dashed #4ecb79;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,7 +28,7 @@
 }
 
 .dropzone p svg {
-  color: #4ECB79;
+  color: #4ecb79;
   width: 24px;
   height: 24px;
   margin-bottom: 8px;
