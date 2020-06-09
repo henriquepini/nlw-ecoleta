@@ -15,28 +15,29 @@
 <img src="https://user-images.githubusercontent.com/11811935/84075755-0ebd2500-a9ab-11ea-93b9-a06b2a6863d5.png" />
 
 ## :information_source: Sobre o projeto:
+
 Este é um projeto da Rocketseat, voltado ao meio ambiente. Através dele, é possível ver em sua região, onde existem pontos de coleta de resíduos cadastrados.
 
 ## :warning: Pré requisitos gerais
 
-- [Node.js](https://nodejs.org/pt-br/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [Expo](https://expo.io)
+-   [Node.js](https://nodejs.org/pt-br/)
+-   [TypeScript](https://www.typescriptlang.org/)
+-   [React](https://pt-br.reactjs.org/)
+-   [React Native](https://reactnative.dev/)
+-   [Expo](https://expo.io)
 
 ## :unlock: Como usar
+
 #### Faça o clone do projeto:
 
-```
-$ git clone https://github.com/henriquepini/nlw-ecoleta.git
-$ cd nlw-ecoleta
-```
+    $ git clone https://github.com/henriquepini/nlw-ecoleta.git
+    $ cd nlw-ecoleta
+
 <h2> Instale as dependências de cada parte do app:</h2>
 
 No seu prompt de comando:
 
-### :gear: API 
+### :gear: API
 
 ```bash
 # Entre na pasta
@@ -56,6 +57,7 @@ $ npm run dev:server
 
 # rodando na porta 3333
 ```
+
 #### Se tiver colisão, mude o arquivo [server.ts][server] para alterar a porta
 
 ### :computer: Front-end
@@ -77,8 +79,9 @@ $ npm start
 ### :iphone: Mobile
 
 #### :warning: Avisos para o mobile :warning:
- - É preciso ter o Expo instalado em seu dispositivo, ou emulador.
- - Entre no arquivo [api.ts][api] e altere a baseURL
+
+-   É preciso ter o Expo instalado em seu dispositivo, ou emulador.
+-   Entre no arquivo [api.ts][api] e altere a baseURL
 
 ```bash
 # Entre na pasta
@@ -96,7 +99,9 @@ $ npm start
 # Se der algum erro com fonte, rode:
 $ expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto --npm
 ```
+
 ## :pray: Agradecimentos
+
 Agreço à equipe da [Rocketseat][rocket] por todo o apoio durante o projeto, e por todos a comunidade envolvida nessa semana !
 
 ## :memo: Licença
@@ -106,5 +111,7 @@ Este projeto está sob a licença MIT. Veja [LICENSE](https://github.com/henriqu
 Feito com :purple_heart: por Henrique Pini 👋 [Entre em contato !](https://www.linkedin.com/in/henriquepini/)
 
 [api]: https://github.com/henriquepini/nlw-ecoleta/blob/master/mobile/src/services/api.ts
+
 [server]: https://github.com/henriquepini/nlw-ecoleta/blob/master/server/src/server.ts
+
 [rocket]: https://rocketseat.com.br/
