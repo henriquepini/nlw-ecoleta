@@ -34,9 +34,9 @@ const Detail = () => {
   const routeParams = route.params as Params;
 
   useEffect(() => {
-    api.get(`points/${routeParams.point_id}`).then(response => {
+    api.get(`points/${routeParams.point_id}`).then((response) => {
       setData(response.data);
-    })
+    });
   }, []);
 
   function handleNavigateBack() {
@@ -51,7 +51,7 @@ const Detail = () => {
   }
 
   function handleWhatsapp() {
-    Linking.openURL(`whatsapp://send?phone=${data.point.whatsapp}&text=Tenho interesse sobre coleta de resíduos.`)
+    Linking.openURL(`whatsapp://send?phone=${data.point.whatsapp}&text=Tenho interesse sobre coleta de resíduos.`);
   }
 
   if (!data.point) {
@@ -68,7 +68,7 @@ const Detail = () => {
 
         <Text style={styles.pointName}>{data.point.name}</Text>
         <Text style={styles.pointItems}>
-          {data.items.map(item => item.title).join(', ')}
+          {data.items.map((item) => item.title).join(', ')}
         </Text>
 
         <View style={styles.address}>
@@ -89,8 +89,8 @@ const Detail = () => {
         </RectButton>
       </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   container: {

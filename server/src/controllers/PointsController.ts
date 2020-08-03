@@ -86,7 +86,7 @@ class PointsController {
         return {
           item_id,
           point_id,
-        }
+        };
       });
     try {
       await trx('point_items').insert(pointItems);
@@ -120,7 +120,6 @@ class PointsController {
       await trx.commit();
     } catch (error) {
       await trx.rollback();
-      console.log(error);
 
       return res.status(500).json({ message: "Could not delete point." });
     }
