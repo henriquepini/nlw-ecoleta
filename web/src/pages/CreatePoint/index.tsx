@@ -80,7 +80,7 @@ const CreatePoint = () => {
         const cityNames = response.data.map((city) => city.nome);
 
         setCities(cityNames);
-      })
+      });
   }, [selectedUf]);
 
   function handleSelectUf(event: ChangeEvent<HTMLSelectElement>) {
