@@ -7,7 +7,7 @@ class PointsController {
 
     const parsedItems = String(items)
       .split(',')
-      .map(item => Number(item.trim()));
+      .map((item) => Number(item.trim()));
 
     const points = await knex('points')
       .join('point_items', 'points.id', '=', 'point_items.point_id')
@@ -18,7 +18,7 @@ class PointsController {
       .select('points.*')
       .orderBy('id');
 
-    const serializedPoints = points.map(point => {
+    const serializedPoints = points.map((point) => {
       return {
         ...point,
         image_url: `http://192.168.0.109:3333/uploads/${point.image}`,
@@ -73,7 +73,7 @@ class PointsController {
       longitude,
       city,
       uf
-    }
+    };
 
     const insertedIds = await trx('points').insert(point);
 
@@ -87,13 +87,12 @@ class PointsController {
           item_id,
           point_id,
         }
-      })
+      });
     try {
       await trx('point_items').insert(pointItems);
 
       await trx.commit();
     } catch (error) {
-      console.log(error)
       await trx.rollback();
 
       return res.status(400).json({ message: 'Falha na inserção no banco, verifique se os items informados são válidos.' });
@@ -111,7 +110,6 @@ class PointsController {
       await trx('point_items').where('point_id', id).del();
     } catch (error) {
       await trx.rollback();
-      console.log(error);
 
       return res.status(400).json({ message: "Could not delete point_items." });
     }

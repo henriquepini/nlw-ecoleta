@@ -11,6 +11,6 @@ const connection = knex({
       conn.run('PRAGMA foreign_keys = ON', cb)
   },
   useNullAsDefault: true
-})
+});
 
-export default connection
+export default connection;

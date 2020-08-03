@@ -25,6 +25,6 @@ const Routes = () => {
       </AppStack.Navigator>
     </NavigationContainer>
   );
-}
+};
 
 export default Routes;

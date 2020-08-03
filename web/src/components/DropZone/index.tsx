@@ -11,7 +11,7 @@ interface Props {
 const Dropzone: React.FC<Props> = ({ onFileUploaded }) => {
   const [selectedFileUrl, setSelectedFileUrl] = useState('');
 
-  const onDrop = useCallback(acceptedFiles => {
+  const onDrop = useCallback((acceptedFiles) => {
     const file = acceptedFiles[0];
 
     const fileUrl = URL.createObjectURL(file);
@@ -40,7 +40,7 @@ const Dropzone: React.FC<Props> = ({ onFileUploaded }) => {
         )
       }
     </div>
-  )
-}
+  );
+};
 
 export default Dropzone;
