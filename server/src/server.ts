@@ -14,6 +14,4 @@ app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads'))); /
 
 app.use(errors());
 
-app.listen(3333, () => {
-  console.log('Server started on http://192.168.0.109:3333/');
-});
+app.listen(3333);
