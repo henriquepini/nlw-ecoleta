@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/github/license/henriquepini/nlw-ecoleta?color=blueviolet" />
   <img src="https://img.shields.io/github/followers/henriquepini?label=Follow&style=social" />
   <img src="https://img.shields.io/github/stars/henriquepini/nlw-ecoleta?style=social" />
-<p/>
+</p>
 
 <img src="https://user-images.githubusercontent.com/11811935/84075755-0ebd2500-a9ab-11ea-93b9-a06b2a6863d5.png" />
 
